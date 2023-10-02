@@ -1,0 +1,70 @@
+<div class="container-fluid">
+   <div class="container">
+      <div class="main_dashboard">
+        <app-admin-header></app-admin-header>
+         <div class="row">
+            <div class="col-md-2">
+               <app-admin-sidebar></app-admin-sidebar>
+            </div>
+            <div class="col-md-10">
+               <div class="right_dashboard">
+                  <div class="header_add">
+                     <h2><li><i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        Block / Unblock Student</h2>
+                  </div>
+                  <div class="quiz_listing">
+
+                   <div class="list_db">
+                      <div class="row">
+                         <div class="col-md-1">
+                            <p>Roll No.</p>
+                         </div>
+                         <div class="col-md-2">
+                            <p>Name</p>
+                         </div>
+                         <div class="col-md-3">
+                            <p>Email</p>
+                         </div>
+                         <div class="col-md-2">
+                            <p>Faculty</p>
+                         </div>
+                         <div class="col-md-2">
+                            <p>Block</p>
+                         </div>
+                         <div class="col-md-2">
+                            <p>Unblock</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="list_db">
+                   <div class="row" *ngFor="let stu of student">
+                      <div class="col-md-1">
+                         <p>{{stu.id}}</p>
+                      </div>
+                      <div class="col-md-2">
+                         <p>{{stu.first_name}} {{stu.last_name}}</p>
+                      </div>
+                      <div class="col-md-3">
+                         <p>{{stu.email}}</p>
+                      </div>
+                      <div class="col-md-2">
+                         <p>{{stu.course_name}}</p>
+                      </div>
+                      <div class="col-md-2">
+                         <p><i class="fa fa-lock" aria-hidden="true"></i>
+                         </p>
+                      </div>
+                      <div class="col-md-2">
+                         <p><i class="fa fa-unlock" aria-hidden="true"></i>
+                         </p>
+                      </div>
+                   </div>
+                </div>
+               
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

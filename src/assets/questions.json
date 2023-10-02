@@ -1,0 +1,191 @@
+{
+    "questions" : [
+        {
+            "questionText" : "HTML stands for what?",
+            "options": [{
+                "text" : "hypertext markup language",
+                "correct" : true
+            },
+            {
+                "text" : "hypertext mark language"
+            },
+            {
+                "text" : "hyper mark language"
+            },
+            {
+                "text" : "highlevel mark language"
+            }
+        ],
+        "explation" : "HTML stands for Hypertext markup language."
+        },
+        {
+            "questionText" : "What is the use of CSS?",
+            "options": [{
+                "text" : "to style the web page",
+                "correct" : true
+            },
+            {
+                "text" : "to maintain the backend"
+            },
+            {
+                "text" : "to create api"
+            },
+            {
+                "text" : "to create json file"
+            }
+        ],
+        "explation" : "HTML stands for Hypertext markup language."
+        },
+        {
+            "questionText" : "Angular is a popular frontend library in which language?",
+            "options": [{
+                "text" : "python"
+                
+            },
+            {
+                "text" : "javascript",
+                "correct" : true
+            },
+            {
+                "text" : "java"
+            },
+            {
+                "text" : "php"
+            }
+        ],
+        "explation" : "HTML stands for Hypertext markup language."
+        },
+        {
+            "questionText" : "What is the use of CSS?",
+            "options": [{
+                "text" : "to style the web page",
+                "correct" : true
+            },
+            {
+                "text" : "to maintain the backend"
+            },
+            {
+                "text" : "to create api"
+            },
+            {
+                "text" : "to create json file"
+            }
+        ],
+        "explation" : "HTML stands for Hypertext markup language."
+        },
+        {
+            "questionText" : "Angular is a popular frontend library in which language?",
+            "options": [{
+                "text" : "python"
+                
+            },
+            {
+                "text" : "javascript",
+                "correct" : true
+            },
+            {
+                "text" : "java"
+            },
+            {
+                "text" : "php"
+            }
+        ],
+        "explation" : "HTML stands for Hypertext markup language."
+        },
+        {
+            "questionText" : "HTML tags close within",
+            "options": [{
+                "text" : "<>",
+                "correct" : true
+            },
+            {
+                "text" : "{}"
+            },
+            {
+                "text" : "()"
+            },
+            {
+                "text" : "[]"
+            }
+        ],
+        "explation" : "HTML stands for Hypertext markup language."
+        },
+        {
+            "questionText" : "How to create unordered list in HTML?",
+            "options": [{
+                "text" : "<ul>",
+                "correct" : true
+            },
+            {
+                "text" : "<ol>"
+            },
+            {
+                "text" : "<b>"
+            },
+            {
+                "text" : "<a href>"
+            }
+        ],
+        "explation" : "HTML stands for Hypertext markup language."
+        },
+        {
+            "questionText" : "What is smallest header in HTML?",
+            "options": [{
+                "text" : "h1"
+                
+            },
+            {
+                "text" : "h6",
+                "correct" : true
+            },
+            {
+                "text" : "h2"
+            },
+            {
+                "text" : "h3"
+            }
+        ],
+        "explation" : "HTML stands for Hypertext markup language."
+        },
+        {
+            "questionText" : "How to display preformatted text in HTML?",
+            "options": [{
+                "text" : "<p>"
+                
+            },
+            {
+                "text" : "<pre>",
+                "correct" : true
+            },
+            {
+                "text" : "<hr>"
+            },
+            {
+                "text" : "NOT"
+            }
+        ],
+        "explation" : "HTML stands for Hypertext markup language."
+        },
+        {
+            "questionText" : "Which element is used to define discription data on HTML?",
+            "options": [{
+                "text" : "<li>"
+                
+            },
+            {
+                "text" : "<ol>"
+                
+            },
+            {
+                "text" : "<dd>",
+                "correct" : true
+            },
+            {
+                "text" : "<dl>"
+            }
+        ],
+        "explation" : "HTML stands for Hypertext markup language."
+        }
+        
+    ]
+}

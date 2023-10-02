@@ -1,0 +1,67 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+            <div class="register_box">
+            <h2 style="font-weight: 700; padding: 30px 0px;">Register</h2>
+            <p>Already have an account? <a routerLink="/student-signin"><span style="font-weight:600;">Sign In</span></a></p>
+            <form [formGroup]="complexForm" (ngSubmit)="submitForm(complexForm.value)">
+                <div class="form-group" [ngClass]="{'has-error':!complexForm.controls['f_name'].valid && complexForm.controls['f_name'].touched}">
+                  <label>First Name:</label>
+                  <input class="form-control" type="text" placeholder="Enter Your firstName" formControlName="f_name">
+                  <!-- The hasError method will tell us if a particular error exists -->
+                  <div *ngIf="complexForm.controls['f_name'].hasError('required') && complexForm.controls['f_name'].touched" class="alert alert-danger">You must include a first name.</div>
+                </div>
+                <div class="form-group" [ngClass]="{'has-error':!complexForm.controls['l_name'].valid && complexForm.controls['l_name'].touched}">
+                  <label>Last Name</label>
+                  <input class="form-control" type="text" placeholder="Enter Your lastName" formControlName="l_name">
+                  <!-- The hasError method can work with the built in validators but custom validators as well -->
+                  <div *ngIf="complexForm.controls['l_name'].hasError('required') && complexForm.controls['l_name'].touched" class="alert alert-danger">You must include a last name.</div>
+                  <div *ngIf="complexForm.controls['l_name'].hasError('minlength') && complexForm.controls['l_name'].touched" class="alert alert-danger">Your last name must be at least 5 characters long.</div>
+                  <div *ngIf="complexForm.controls['l_name'].hasError('maxlength') && complexForm.controls['l_name'].touched" class="alert alert-danger">Your last name cannot exceed 10 characters.</div>
+                </div>
+                
+                <div class="form-group" [ngClass]="{'has-error':!complexForm.controls['mobile'].valid && complexForm.controls['mobile'].touched}">
+                  <label>Mobile No.</label>
+                  <input class="form-control" type="text" placeholder="Enter Your Mobile No." formControlName="mobile">
+                  <!-- The hasError method can work with the built in validators but custom validators as well -->
+                  <div *ngIf="complexForm.controls['mobile'].hasError('required') && complexForm.controls['mobile'].touched" class="alert alert-danger">Please enter your Mobile No.</div>
+                  <div *ngIf="complexForm.controls['mobile'].hasError('minlength') && complexForm.controls['mobile'].touched" class="alert alert-danger">Your Mobile No. cannot less than 10 characters.</div>
+                  <div *ngIf="complexForm.controls['mobile'].hasError('maxlength') && complexForm.controls['mobile'].touched" class="alert alert-danger">Your last name cannot exceed 12 characters.</div>
+                </div>
+          
+                <div class="form-group" [ngClass]="{'has-error':!complexForm.controls['email'].valid && complexForm.controls['email'].touched}">
+                  <label>Email</label>
+                  <input class="form-control" type="text" placeholder="Enter Your Email" formControlName="email">
+                  <!-- The hasError method can work with the built in validators but custom validators as well -->
+                  <div *ngIf="complexForm.controls['email'].hasError('required') && complexForm.controls['email'].touched" class="alert alert-danger">You must include a  valid email.</div>
+                  <div *ngIf="complexForm.controls['email'].hasError('minlength') && complexForm.controls['email'].touched" class="alert alert-danger">Your email must be the characters between a-z.</div>
+                  <div *ngIf="complexForm.controls['email'].hasError('maxlength') && complexForm.controls['email'].touched" class="alert alert-danger">Your last name cannot exceed 10 characters.</div>
+                </div>
+          
+                <!--  password validation-->
+                 PASSWORD FIELD
+                <input class="form-control" type="password" formControlName="password" (change)="onPasswordChange()"/>
+                
+                 CONFIRM PASSWORD FIELD
+                <input class="form-control" type="password" formControlName="confirm_password" (change)="onPasswordChange()" />
+                <br>
+                 <!--SHOW ERROR IF MISMATCH-->
+                <span *ngIf="confirm_password.hasError('mismatch')">Password do not match.</span>
+                
+                
+                
+               <button type="submit" class="btn btn-primary" [disabled]="!complexForm.valid" (click)="onSubmit()">Submit</button>
+               <!-- <button class="btn btn-success" (click)="onSubmit()">Save</button> -->
+               
+                </form>
+                <p>Already have an account? <a routerLink="/student-signin"><span style="font-weight:600;">Sign In</span></a></p>
+        </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+
+</div>

@@ -1,1 +1,422 @@
-/* You can add global styles to this file, and also import other style files */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover{
+  color: #fff;
+}
+/*question page design*/
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px 35px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 16px;
+  color: #000;
+}
+
+.card:hover {
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+#quiz_btn {
+  background-color: blue;
+  padding: 10px 15px;
+}
+
+#quiz_btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  transition: 0.5s ease-in;
+}
+
+body {
+  margin: auto;
+  background-image: url(./assets/images/background_skill.jpg);
+  /* background-color: #0c3a55; */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  transition: 0.5s ease;
+  color: #fff;
+  padding: 0px 10px;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+li .card:hover {
+  border: 1px solid blue;
+}
+
+ol {
+  padding: 0;
+}
+
+.cat_box {
+  padding: 50px 10px;
+  margin: 25px 25px;
+  box-shadow: 0px 10px 15px rgba(21, 27, 21, 0.5);
+  border-radius: 16px;
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+}
+
+.cat_box:hover {
+  box-shadow: 0px 10px 15px rgba(21, 27, 21, 0.8);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: 0.5s cubic-bezier(0, -0.53, .35, 1.47);
+  color: #fff;
+}
+
+#quiz_btn {
+  margin: 20px 20px;
+}
+
+.home_btn {
+  background-color: #fff;
+  padding: 10px 10px;
+  margin: 20px 97px;
+  border-radius: 10px;
+}
+
+.admin_home {
+  background-color: #ffffff2e;
+  box-shadow: inset 0px 0px 7px grey;
+  padding: 20px 20px;
+  border-radius: 16px;
+  margin-top: 50px;
+}
+
+#login_id {
+  padding: 10px 35px;
+  background-color: #fff;
+  margin: 50px 5px;
+  border-radius: 16px;
+}
+
+#login_id a {
+  font-size: 25px;
+}
+
+#login_id:hover {
+  box-shadow: 0px 10px 15px rgba(21, 27, 21, 0.5);
+}
+
+.register_box {
+  border-radius: 16px;
+  padding: 30px 30px;
+  background-color: #ffffff2e;
+  margin: 20px 0px;
+}
+
+.form-control {
+  margin: 15px 0px;
+  padding: 10px 10px;
+}
+
+.register_box:hover {
+  transition-duration: 0.5s;
+  box-shadow: inset 0px 0px 7px grey;
+}
+
+/****responsive menu********/
+.sidepanel {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: rgb(0 0 0 / 15%);
+  overflow-x: hidden;
+  transition: 0.5s cubic-bezier(0.34, 1.41, 0.94, -0.29);
+  padding-top: 60px;
+}
+
+.sidepanel:hover {
+  box-shadow: 0px 10px 15px rgba(21, 27, 21, 0.5);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #1e04f1;
+  display: block;
+  transition: 0.3s cubic-bezier(0.25, 0.1, 0.28, 0.14);
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 15px;
+  border: none;
+  position: fixed;
+  margin: 10px 10px;
+  border-radius: 10px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/*btn logout*/
+.btn_logout{
+  color: #fff;
+  padding: 25px 15px;
+  border-radius: 10px;
+}
+
+/*dashboard-student*/
+.header_dashboard {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 20px 10px;
+}
+
+.left_dashboard {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.left_dashboard ul {
+  padding: 10px 0px;
+}
+
+.left_dashboard ul li {
+  padding: 20px 0px;
+}
+
+.left_dashboard ul li:hover {
+  margin-left: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  transition: 0.5s ease-in;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.right_dashboard {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.main_dashboard {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.icon_dashboard {
+  backdrop-filter: blur(5px);
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.icon_dashboard i {
+  font-size: 45px;
+}
+
+.dashboard_box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  margin: 25px 25px;
+  padding: 25px 25px;
+  border-radius: 10px;
+}
+
+.dashboard_box:hover {
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in;
+}
+
+.quiz_listing {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.list_db {
+  padding: 5px 30px;
+  text-align: center;
+}
+
+.list_db p {
+  padding: 5px 10px;
+}
+
+.list_db:hover {
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in;
+}
+
+.activity_box {
+  padding: 5px 15px;
+  margin-top: 25px;
+}
+
+.task_box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 5px 30px;
+  border-radius: 10px;
+}
+
+.message_box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  margin: 15px 0px;
+}
+
+.message_box1 {
+  padding: 5px 15px;
+}
+
+/**add student page*****/
+.header_add {
+  padding: 10px 15px;
+}
+
+.form-control {
+  background-color: #281e1e0f;
+  color: #fff;
+}
+
+/***profile *admin**/
+.img_admin {
+  background-color: #fff;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.social_box {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 7px 0px;
+  font-size: 30px;
+  margin: 10px 5px;
+}
+
+.social_box:hover {
+  transform: rotatez(360deg);
+  transition: 1s cubic-bezier(.9, .03, .07, 2.18);
+  box-shadow: 3px 3px 3px #000;
+  color: blue;
+  background-color: #fff;
+}
+
+.admin_about {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.btn-about {
+  padding: 5px 30px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.admin_skill {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  padding: 10px 35px;
+  border-radius: 10px;
+}
+
+.icon_1 i {
+  padding: 0px 15px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 25px;
+}
+
+/*student-dashboard*/
+.message_student {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 10px 50px;
+  border-radius: 10px;
+  margin: 20px 0px;
+}
+
+footer {
+  background:rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  margin-top: 5px;
+  padding: 40px 10px;
+}
+/*result page*/
+.result{
+  color: #fff;
+}
+.greet{
+  font-size: 50px;
+  color: #fff;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+.copl_box{
+  color: #fff;
+  font-size: 19px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 30px 0px;
+  margin: 15px 0px;
+  border-radius: 10px;
+}
+.copl_box:hover{
+  box-shadow: 5px 5px 5px #000;
+  transition: 0.5s ease-in;
+}
+.number{
+  font-size: 35px;
+  font-weight: 900;
+}

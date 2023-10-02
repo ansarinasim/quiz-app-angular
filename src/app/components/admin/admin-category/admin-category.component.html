@@ -1,0 +1,58 @@
+<div class="container-fluid">
+    <div class="container">
+       <div class="main_dashboard">
+         <app-admin-header></app-admin-header>
+          <div class="row">
+             <div class="col-md-2">
+                <app-admin-sidebar></app-admin-sidebar>
+                      
+             </div>
+             <div class="col-md-10">
+                <div class="right_dashboard">
+                   <div class="header_add">
+                      <h2><i class="fa fa-user-plus" aria-hidden="true"></i>
+                         Add Category</h2>
+                   </div>
+                   <div class="student_form" style="padding: 10px 20px;">
+                     <form [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off">
+                         <div class="row">
+                            <div class="col-md-6">
+                               <div class="form-group input-group-lg">
+                                  <h5>Category Id</h5>
+                                  <input class="form-control" placeholder="Category Id" formControlName="cat_id">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                               <div class="form-group input-group-lg">
+                                  <h5>Category Name</h5>
+                                  <input class="form-control" placeholder="Category Name" formControlName="cat_name">
+                              </div>
+                            </div>
+                         </div>
+                         <!-- <div class="row">
+                            <div class="col-md-6">
+                               <div class="form-group input-group-lg">
+                                  <h5>Parent Id</h5>
+                                  <input class="form-control" placeholder="Subcategory Id" formControlName="parent_id">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                               <div class="form-group input-group-lg">
+                                  <h5>Description</h5>
+                                  <input class="form-control" placeholder="Write Description" formControlName="cat_des">
+                              </div>
+                            </div>
+                         </div> -->
+                         
+                         
+                         
+ 
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block btn-lg btn-block" style="margin:25px 0px;">Submit</button>
+                        </div>
+                      </form>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>

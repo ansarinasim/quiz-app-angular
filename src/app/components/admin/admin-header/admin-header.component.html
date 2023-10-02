@@ -1,0 +1,12 @@
+<div class="header_dashboard">
+    <div class="row">
+       <div class="col-md-4"><img src="https://www.acesoftech.com/wp-content/themes/acesoftech/assets/img/logo1.png" alt="logo" style="height: 100px">
+      </div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4"><div class="btn_logout" style="float:right;" *ngIf="logoutbtn">
+        {{ this.session_email }}
+        <button type="button" *ngIf="logoutbtn" class="btn btn-block" 
+          (click)="logout()"><i class="fa fa-sign-out" aria-hidden="true"></i>logout</button>
+      </div></div>
+    </div>
+ </div>

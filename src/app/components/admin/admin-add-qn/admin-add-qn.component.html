@@ -1,0 +1,96 @@
+<div class="container-fluid">
+   <div class="container">
+      <div class="main_dashboard">
+         <app-admin-header></app-admin-header>
+         <div class="row">
+            <div class="col-md-2">
+               <app-admin-sidebar></app-admin-sidebar>
+            </div>
+            <div class="col-md-10">
+               <div class="right_dashboard">
+                  <div class="header_add">
+                     <h2><i class="fa fa-paperclip" aria-hidden="true"></i>
+                        Add Question</h2>
+                  </div>
+                  <div class="student_form" style="padding: 10px 20px;">
+                     <form [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off"> 
+                        <div class="form-group input-group-lg">
+                           <h5>Question</h5>
+                           <input class="form-control" placeholder="Question" formControlName="questionText">
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group input-group-lg">
+                                 <h5>option1</h5>
+                                 <input class="form-control" placeholder="" formControlName="options">
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group input-group-lg">
+                                 <h5>option2</h5>
+                                 <input class="form-control" placeholder="" formControlName="options">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group input-group-lg">
+                                 <h5>option3</h5>
+                                 <input class="form-control" placeholder="" formControlName="options">
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group input-group-lg">
+                                 <h5>option4</h5>
+                                 <input class="form-control" placeholder="" formControlName="options">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <h5>Category Name</h5>
+                                 <select class="form-control" type="text" placeholder="Enter Category"
+                                    formControlName="cat_name">
+
+                                    <option *ngFor="let cat of category" [value]="cat.id">{{cat.cat_name }}</option>
+
+                                 </select>
+
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group input-group-lg">
+                                 <h5>Explanantion</h5>
+                                 <select class="form-control" type="text" placeholder="Enter Category"
+                                    formControlName="explanation">
+                                    <option value="explanation">Explanantion</option>
+
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <button class="btn btn-success btn-block btn-lg btn-block"
+                              style="margin:25px 0px;">Submit</button>
+                        </div>
+
+                     </form>
+                  </div>
+                  <!--   <div class="student_form">
+                     <p>Here is category.</p>
+                     <div class="category_box" *ngFor="let cat of category">
+                         <h3>{{cat.cat_id}}</h3>
+                         <h5>{{cat.parent_id}}</h5>
+                         <p>Category-  {{cat.id}}</p>
+                         <p>Category-  {{cat.cat_des}}</p>
+                         
+                             
+                     </div> 
+                 </div>-->
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
